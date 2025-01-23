@@ -11,7 +11,7 @@ spec:
     - name: remove
       image: alpine:3
       workingDir: $(workspaces.source.path)
-      securityContex:
+      securityContext:
         runAsNonRoot: false
         runAsUser: 0
       env:
